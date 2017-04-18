@@ -1,7 +1,7 @@
 // Javascript Entry Point
 
 
-//IIFEE pattern
+//IIFEE pattern (Immediately Invoked Function Expression)
 
 var foo = "foo";
 
@@ -11,3 +11,17 @@ var foo = "foo";
 });
 
 console.log(foo);
+
+// Hoisting - functions first
+
+foo();
+
+var foo = 2;
+
+function foo() {
+	console.log('bar');
+}
+function foo() {
+	console.log('foo');
+
+}
